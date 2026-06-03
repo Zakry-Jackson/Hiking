@@ -8,9 +8,8 @@ to invoke the thought of nature! The site supports creating, viewing, editing, a
 Tech Stack:
 - Backend: Node.js and Express
 - Templating: Pug
-- Database(db): MySQL
+- Database(db): SQLite
 - Style: All custom CSS
-- Misc: Uses a MySQL tunnel script to run
 -------------------------------------------------------------------------------------------------
 Database Server: cse-mysql-classes-02.cse.umn.edu
 Database Port: 3306
@@ -20,16 +19,12 @@ Password: 2966
 ---------------------
 To run the site:
 1. Install necessary dependencies in terminal by entering: npm install
-2. In a separate terminal, start the SQL tunnel by entering: node tunnel.js
-3. The credentials at the top of this README are hard coded in data.js
-4. Back in the original terminal, start the server by entering: node server.js
+2. Start the server by entering: node server.js
 5. Visit the site in the browser. For me on Mac, it is CMD + click on the http://localhost:4131 in the terminal
-6. The Blogs table has already been created in my database. If the table isn't there for some reason, just
-recreate it by running schema.sql against the database C4131F25U54, i.e. run SOURCE schema.sql in the sql terminal
 -------------------------------------------------------------------------------------------------
 Features Implemented:
 ---------------------
-- Storing posts in MySQL (there's no in-memory storage)
+- Storing posts in SQLite
 - Creating, reading, editing, and deleting posts (Made with future administrative powers in mind)
 - 3 most recent posts on home page
 - Pug templates with shared layout (see nav.pug and page_layout.pug)
