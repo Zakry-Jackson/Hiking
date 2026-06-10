@@ -11,12 +11,6 @@ Tech Stack:
 - Database(db): SQLite
 - Style: All custom CSS
 -------------------------------------------------------------------------------------------------
-Database Server: cse-mysql-classes-02.cse.umn.edu
-Database Port: 3306
-Database Name: C4131F25U54
-Username: C4131F25U54
-Password: 2966
----------------------
 To run the site:
 1. Install necessary dependencies in terminal by entering: npm install
 2. Start the server by entering: node server.js
